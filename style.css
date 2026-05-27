@@ -128,13 +128,13 @@ a {
   opacity: 0.96;
 }
 
-.comment-copy::after {
-  content: "";
-  display: inline-block;
-  width: 0.55em;
-  height: 1.05em;
-  margin-left: 0.32em;
-  vertical-align: -0.16em;
+.comment-cursor {
+  position: absolute;
+  left: 8.7%;
+  top: 87.8%;
+  z-index: 5;
+  width: 0.48rem;
+  height: 1.02rem;
   background: #ff7fc6;
   box-shadow:
     0 0 1px rgba(255, 218, 239, 0.96),
@@ -142,7 +142,6 @@ a {
     0 0 0.68rem rgba(255, 47, 160, 0.58);
   animation: commentCursorBlink 1.08s steps(1) infinite;
 }
-
 .menu-hotspot {
   position: absolute;
   top: max(0.75rem, env(safe-area-inset-top));
@@ -303,6 +302,7 @@ a {
     transition-duration: 1ms !important;
   }
 }
+
 
 
 
