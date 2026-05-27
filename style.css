@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --phone-width: 430px;
   --pink: #ff69bf;
   --pink-soft: #ff9ad7;
@@ -108,20 +108,24 @@ a {
 
 .comment-copy {
   position: absolute;
-  left: 13%;
+  left: 8.7%;
   right: 12%;
-  top: 88.2%;
+  top: 86.6%;
   z-index: 4;
   margin: 0;
-  color: #ffd3ed;
-  font-size: clamp(0.82rem, 4.2vw, 1.1rem);
-  line-height: 1.45;
-  letter-spacing: 0.02em;
+  color: #ff7fc6;
+  font-family: "MS Gothic", "MS PGothic", "Courier New", monospace;
+  font-size: clamp(0.7rem, 3.05vw, 0.82rem);
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0.05em;
   text-shadow:
-    0 0 0.2rem rgba(255, 154, 215, 0.92),
-    0 0 0.65rem rgba(255, 47, 160, 0.7),
-    2px 0 rgba(59, 12, 45, 0.85);
+    0 0 1px rgba(255, 218, 239, 0.96),
+    0 0 0.22rem rgba(255, 105, 191, 0.88),
+    0 0 0.58rem rgba(255, 47, 160, 0.52),
+    1px 0 rgba(54, 10, 42, 0.9);
   white-space: pre-wrap;
+  opacity: 0.96;
 }
 
 .menu-hotspot {
@@ -273,3 +277,4 @@ a {
     transition-duration: 1ms !important;
   }
 }
+
