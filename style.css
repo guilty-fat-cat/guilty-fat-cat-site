@@ -130,11 +130,11 @@ a {
 
 .comment-cursor {
   position: absolute;
-  left: 8.35%;
+  left: 11.2%;
   top: 88.15%;
   z-index: 5;
-  width: 0.42rem;
-  height: 0.94rem;
+  width: 0.45rem;
+  height: 1.02rem;
   background: #ff7fc6;
   box-shadow:
     0 0 1px rgba(255, 218, 239, 0.96),
@@ -302,6 +302,7 @@ a {
     transition-duration: 1ms !important;
   }
 }
+
 
 
 
