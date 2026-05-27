@@ -110,7 +110,7 @@ a {
   position: absolute;
   left: 16.2%;
   right: 12%;
-  top: 88.2%;
+  top: 87.8%;
   z-index: 4;
   margin: 0;
   color: #ff7fc6;
@@ -277,6 +277,7 @@ a {
     transition-duration: 1ms !important;
   }
 }
+
 
 
 
