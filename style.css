@@ -108,7 +108,7 @@ a {
 
 .comment-copy {
   position: absolute;
-  left: 13.8%;
+  left: 15.0%;
   right: 12%;
   top: 87.8%;
   z-index: 4;
@@ -130,7 +130,7 @@ a {
 
 .comment-cursor {
   position: absolute;
-  left: 11.2%;
+  left: 12.4%;
   top: 88.15%;
   z-index: 5;
   width: 0.45rem;
@@ -302,6 +302,7 @@ a {
     transition-duration: 1ms !important;
   }
 }
+
 
 
 
