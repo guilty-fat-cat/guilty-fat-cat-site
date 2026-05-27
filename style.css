@@ -78,20 +78,22 @@ a {
 .lamp-flicker,
 .neon-flicker {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
   border-radius: 50%;
   mix-blend-mode: screen;
 }
 
 .lamp-flicker {
-  left: 32%;
-  top: 12%;
-  width: 12%;
-  height: 8%;
-  background: rgba(255, 185, 124, 0.2);
-  filter: blur(14px);
-  animation: lampFlicker 6.7s steps(1) infinite;
+  left: 31%;
+  top: 12.6%;
+  width: 13%;
+  height: 7%;
+  background:
+    radial-gradient(circle, rgba(255, 238, 188, 0.82) 0 10%, rgba(255, 173, 111, 0.36) 32%, transparent 72%);
+  filter: blur(9px);
+  opacity: 0.66;
+  animation: lampFlicker 5.9s steps(1) infinite;
 }
 
 .neon-flicker {
@@ -102,6 +104,24 @@ a {
   background: rgba(255, 47, 160, 0.18);
   filter: blur(20px);
   animation: neonFlicker 5.4s ease-in-out infinite;
+}
+
+.comment-copy {
+  position: absolute;
+  left: 13%;
+  right: 12%;
+  top: 88.2%;
+  z-index: 4;
+  margin: 0;
+  color: #ffd3ed;
+  font-size: clamp(0.82rem, 4.2vw, 1.1rem);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-shadow:
+    0 0 0.2rem rgba(255, 154, 215, 0.92),
+    0 0 0.65rem rgba(255, 47, 160, 0.7),
+    2px 0 rgba(59, 12, 45, 0.85);
+  white-space: pre-wrap;
 }
 
 .menu-hotspot {
@@ -194,21 +214,29 @@ a {
 
 @keyframes lampFlicker {
   0%,
-  15%,
-  44%,
+  11%,
+  37%,
+  52%,
   100% {
-    opacity: 0.88;
+    opacity: 0.7;
   }
-  16%,
-  18% {
-    opacity: 0.5;
+  12% {
+    opacity: 0.28;
   }
-  45%,
-  46% {
-    opacity: 0.68;
+  13% {
+    opacity: 0.82;
   }
-  74% {
-    opacity: 0.78;
+  39% {
+    opacity: 0.36;
+  }
+  41% {
+    opacity: 0.74;
+  }
+  76% {
+    opacity: 0.46;
+  }
+  78% {
+    opacity: 0.82;
   }
 }
 

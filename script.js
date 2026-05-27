@@ -1,6 +1,7 @@
 const menuButton = document.querySelector(".menu-hotspot");
 const menu = document.querySelector(".site-menu");
 const closeLayer = document.querySelector(".menu-close-layer");
+const commentCopy = document.querySelector(".comment-copy");
 
 const setMenuOpen = (isOpen) => {
   menu.classList.toggle("is-open", isOpen);
@@ -22,3 +23,21 @@ document.addEventListener("keydown", (event) => {
     setMenuOpen(false);
   }
 });
+
+const loadComment = async () => {
+  if (!commentCopy) return;
+
+  try {
+    const response = await fetch(`comment.txt?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) return;
+
+    const text = (await response.text()).trim();
+    if (text) {
+      commentCopy.textContent = text;
+    }
+  } catch {
+    commentCopy.textContent = commentCopy.dataset.defaultComment;
+  }
+};
+
+loadComment();
